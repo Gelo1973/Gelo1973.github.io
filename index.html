@@ -1,0 +1,35 @@
+<!DOCTYPE html>                    <!-- исторический артефакт, который должен быть включён для того, что бы все работало правильно -->
+                                   <!-- СМОТРИ САЙТ https://developer.mozilla.org/ru/docs/Learn/Getting_started_with_the_web -->
+<html>                             <!-- <html></html> — элемент <html>. Этот элемент оборачивает весь контент на всей странице, и иногда известен как корневой элемент. -->
+  
+  <head>                           <!-- <head></head> — элемент <head>. Этот элемент выступает в качестве контейнера для всего, что вы пожелаете включить на HTML страницу, но не являющегося контентом, который вы показываете пользователям вашей страницы. К ним относятся такие вещи, как ключевые слова и описание страницы, которые будут появляться в результатах поиска, CSS стили нашего контента, кодировка и многое другое. -->
+    <meta charset="utf-8">         <!-- <meta charset="utf-8"> — этот элемент устанавливает UTF-8 кодировку вашего документа, которая включает в себя большинство символов из всех известных человечеству языков. -->
+    <title>My test page</title>    <!-- <title></title> — элемент <title>. Этот элемент устанавливает заголовок для вашей страницы, который является названием, появляющимся на вкладке браузера загружаемой страницы -->
+    <link href="styles/style.css" rel="stylesheet" type="text/css" />
+    <!-- Этот код связывает вашу страницу с таблицой стилями, которая загружает семейство шрифтов Open  Sans вместе с вашей страницей и позволяет вам применять их к вашим HTML-элементам используя свою собственную таблицу стилей --> 
+    <link                         
+         href="http://fonts.googleapis.com/css?family=Open+Sans"
+         rel="stylesheet"
+         type="text/css" />        
+  </head>
+  
+  <body>                           <!-- <body></body> — элемент <body>. В нем содержится весь контент, который вы хотите показывать пользователям, когда они посещают вашу страницу, будь то текст, изображения, видео, игры, проигрываемые аудиодорожки или что-то ещё. -->
+    <h1>Mozilla is cool</h1>       <!-- Заголовок типа h1, может быть от h1 до h6, отличаются размером -->
+    <img src="images/firefox-icon.jpg" alt="The Firefox logo: a flaming fox surrounding the Earth." width="300">  <!--код встраивает изображение на нашу страницу в нужном месте alt - альтернатива при неудаче зангрузки изображения , width - Ширина изображения в пикселях, можно ещё height-->
+    <p>At Mozilla, we’re a global community of</p>   <!-- абзац, простой текст -->
+    <ul>                           <!-- ul - ненумерованный список (unordered list) , ol - нумерованный список (ordered list) -->
+      <li>technologists</li>       <!-- list item -->
+      <li>thinkers</li>
+      <li>builders</li>
+    </ul>
+
+    <p>working together to keep the Internet alive and accessible, so people worldwide can be informed contributors and creators of the Web. 
+      We believe this act of human collaboration across an open platform is essential to individual growth and our collective future.</p>
+
+    <p>Read the <a href="https://www.mozilla.org/en-US/about/manifesto/">Mozilla Manifesto</a>         <!-- a (anchor ) href (hypertext reference) - ссылка на другой объект, >Mozilla Manifesto< - то как будет называться ссылка -->
+      to learn even more about the values and principles that guide the pursuit of our mission.</p>
+    <button>Change user</button>
+    <script src="scripts/main.js"></script>     <!-- В основном этот код выполняет ту же работу, что и элемент <link> для CSS — добавляет JavaScript на страницу, позволяя ему взаимодействовать с HTML (и CSS, и чем-нибудь ещё на странице). -->
+  </body>
+
+</html>
